@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Home_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="152dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/spay_india"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/moneyicon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="271dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/surakshit_hai_asan_hai_vishwas_apani_pehchan_hai"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="206dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/blue"
+        android:onClick="showAllUsers"
+        android:padding="10dp"
+        android:text="View Customers"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btntransaction"
+        android:layout_width="206dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/blue"
+        android:onClick="showAllTransactions"
+        android:padding="10dp"
+        android:text="Transaction"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>
